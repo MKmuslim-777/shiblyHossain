@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="transition: background 1.5s;">
+    <div class="profile-card">
+        <div class="image"><img src="shibly.jpg" class="profile-img"></div>
+        <div class="text-data"><span class="name">Shibly Hossain</span>
+            <span class="job">writer</span>
+        </div>
+        <div class="logo-button">
+            <a href="https://www.facebook.com/profile.php?id=100073772481391&mibextid=ZbWKwL" class="icon" style="background: blue">
+                <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/shibly_hossain9?igsh=MXFzajd6MHpxZGFqdQ==" class="icon" style="background: rgb(211, 8, 8)">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@shibly_hossain?_t=8nDjsebfrD6&_r=1" class="icon" style="background: black">
+                <i class="fa-brands fa-tiktok"></i>
+                </a>
+               <a href="https://x.com/shibu9910?t=gZrXf2TSUoOc8xgBezun_Q&s=07" class="icon" style="background: black">
+                <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://youtube.com/@shiblyhossain?si=WPyd4Ga4NRrjxBDn" class="icon" style="background: #ff0000">
+                <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <div class="buttons">
+                <button class="button" onclick="document.location='https://matsbinhossain.blogspot.com/?m=1'">Subcribe</button>
+                <button class="button" onclick="document.location='https://wa.me/8801708708573'">Messege</button>
+              </div>
+              <div class="heart">
+                <div class="data">
+                <i class="fa-regular fa-heart"></i>
+                <span class="num">50k</span>
+                </div>
+                <div class="data">
+                <i class="fa-regular fa-comment"></i>
+                <span class="num">40k</span>
+                </div>
+                <div class="data">
+                <i class="fa-regular fa-share-from-square"></i>
+                <span class="num">12k</span>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const randomColor = () => '#' + Math.random().toString(16).substr(-6)
+        const changeColor = () => document.body.style.backgroundColor = randomColor()
+    
+        setInterval(() => {
+          changeColor()
+        }, 1500)
+    
+        // start color animation as soon as document is ready
+        document.onreadystatechange = () => {
+          if (document.readyState === 'complete') {
+            changeColor()
+          }
+        }
+    </script>
+</body>
+</html>
