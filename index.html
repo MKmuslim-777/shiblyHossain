@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+          *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+
+    }
+    .profile-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 370px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 25px;
+        /* box-shadow: 0 15px 15px 15px rgba(255, 0, 0, 0.1); */
+        position: relative;
+        background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 24px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    .profile-card::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 24px 24px 0 0;
+        height: 36%;
+        width: 100%;
+        background-color: #0e4bf1;
+    }
+    .image{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-color: #4070f4;
+        padding: 3px;
+    }
+    .image .profile-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #fff;
+
+    }
+
+    .profile-card .text-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+    }
+    .text-data .name{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .text-data .job{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .profile-card .logo-button{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .logo-button .icon{
+        display: flex;
+        align-items: center;
+        height: 34px;
+        width: 34px;
+        margin: 0 8px;
+        border-radius: 50%;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        background-color: #4070f4;
+        text-decoration: none;
+    }
+
+    .logo-button .icon:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 0.2em 1.5em 0 #0e4bf1;
+    }
+
+    .profile-card .buttons{
+        display: flex;
+        align-items: center;
+        margin-top: 27px;
+    }
+
+    .buttons .button{
+        color: #fff;
+        font-size: 18px;
+        background-color: #4070f4;
+        border-radius: 24px;
+        border: none;
+        margin: 0 10px;
+        padding: 8px 24px;
+        cursor: pointer;
+        transition: all 0.3S ease;
+    }
+    .buttons .button:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 0.2em 1.5em 0 #0e4bf1;
+        background-color: #0e4bf1;
+    }
+
+    .profile-card .heart{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .heart .data{
+        display: flex;
+        align-items: center;
+        color: #333;
+        padding: 0 20px;
+        border-right: 2px solid #e7e7e7;
+    }
+    .data i{
+        font-size: 18px;
+        margin-top: 6px;
+    }
+    .data:last-child{
+        border-right: none;
+    }
+    </style>
+</head>
+<body style="transition: background 1.50s;">
+    <div class="profile-card">
+        <div class="image"><img src="shibly.jpg" class="profile-img"></div>
+        <div class="text-data"><span class="name">Shibly Hossain</span>
+            <span class="job">writer</span>
+        </div>
+        <div class="logo-button">
+            <a href="https://www.facebook.com/profile.php?id=100073772481391&mibextid=ZbWKwL" class="icon" style="background: blue">
+                <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/shibly_hossain9?igsh=MXFzajd6MHpxZGFqdQ==" class="icon" style="background: rgb(211, 8, 8)">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@shibly_hossain?_t=8nDjsebfrD6&_r=1" class="icon" style="background: black">
+                <i class="fa-brands fa-tiktok"></i>
+                </a>
+               <a href="https://x.com/shibu9910?t=gZrXf2TSUoOc8xgBezun_Q&s=07" class="icon" style="background: black">
+                <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://youtube.com/@shiblyhossain?si=WPyd4Ga4NRrjxBDn" class="icon" style="background: #ff0000">
+                <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <div class="buttons">
+                <button class="button" onclick="document.location='personal.html'">More About</button>
+                <button class="button" onclick="document.location='https://wa.me/8801708708573'">Messege</button>
+              </div>
+              <div class="heart">
+                <div class="data">
+                <i class="fa-regular fa-heart"></i>
+                <span class="num">50k</span>
+                </div>
+                <div class="data">
+                <i class="fa-regular fa-comment"></i>
+                <span class="num">40k</span>
+                </div>
+                <div class="data">
+                <i class="fa-regular fa-share-from-square"></i>
+                <span class="num">12k</span>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const randomColor = () => '#' + Math.random().toString(16).substr(-6)
+        const changeColor = () => document.body.style.backgroundColor = randomColor()
+    
+        setInterval(() => {
+          changeColor()
+        }, 1500)
+    
+        // start color animation as soon as document is ready
+        document.onreadystatechange = () => {
+          if (document.readyState === 'complete') {
+            changeColor()
+          }
+        }
+    </script>
+</body>
+</html>
